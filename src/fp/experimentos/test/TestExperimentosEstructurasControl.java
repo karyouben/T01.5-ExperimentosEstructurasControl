@@ -29,6 +29,22 @@ public class TestExperimentosEstructurasControl {
 		String diaSemana = ExperimentosEstructrurasControl.obtenNombreDia(n1);
 		String r = String.format("El dia de la semana es: " + diaSemana);
 		System.out.println(r);
+		System.out.println("");
+		
+		System.out.println("Introduzca un número: ");
+		Integer n2= sc.nextInt();
+		Integer Sumatorio = ExperimentosEstructrurasControl.sumatorio1(n2);
+		String p = String.format("La suma total es: " + Sumatorio);
+		System.out.println(p);
+		System.out.println("");
+		
+		System.out.println("Introduzca un número: ");
+		Integer n3= sc.nextInt();
+		Integer Sumatorio2 = ExperimentosEstructrurasControl.sumatorio2(n3);
+		String p2 = String.format("La suma total es: " + Sumatorio2);
+		System.out.println(p2);
+		System.out.println("");
+		
 		sc.close();
 	}
 	

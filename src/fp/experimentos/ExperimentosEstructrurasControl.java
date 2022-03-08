@@ -67,9 +67,26 @@ public class ExperimentosEstructrurasControl {
             break;
                   
       }
-       return res;
-       
+       return res;    
 	}
+    public static Integer sumatorio1 (Integer n2) {
+   	 Integer suma1 = 0;
+   	 int i = 1;
+   	 while (i<=n2) {
+   		 suma1 = suma1 +i;
+   		 i++;
+   	 }
+	return suma1;
+   }
+
+    public static Integer sumatorio2 (Integer n3) {
+    	Integer suma = 0;
+    	for(int i =0; i<=n3; i++) {
+    		suma =suma + i;	
+    	}
+    	return suma;
+   
+      }
 }		
    
 
