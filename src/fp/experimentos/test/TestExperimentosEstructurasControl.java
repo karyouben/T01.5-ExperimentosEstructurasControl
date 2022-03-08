@@ -14,12 +14,21 @@ public class TestExperimentosEstructurasControl {
 		Integer n = leeEntero(sc, "Introduzca un número entero :");
 		//Integer n = sc.nextInt();
 		ExperimentosEstructrurasControl.mensajePar(n);
+		System.out.println("");
 		//ExperimentosEstructrurasControl.mensajePar(3);
+		
 		System.out.println("Introduzca su salario: ");
 		Float salario = sc.nextFloat();
 		Float impuesto = ExperimentosEstructrurasControl.calcularImpuesto(salario);
 		String s = String.format("El impuesto correspondiente al salario %.2f es %.2f", salario, impuesto);
 		System.out.println(s);
+		System.out.println("");
+		
+		System.out.println("Introduzca un número de la semana: ");
+		Integer n1= sc.nextInt();
+		String diaSemana = ExperimentosEstructrurasControl.obtenNombreDia(n1);
+		String r = String.format("El dia de la semana es: " + diaSemana);
+		System.out.println(r);
 		sc.close();
 	}
 	
@@ -30,34 +39,6 @@ public class TestExperimentosEstructurasControl {
 		return n;
 	}
 	
-	public static String obtenNombreDia(Integer n) {
-		String res = "" ;
-        switch (n){
-        case 1:              
-            res = "Lunes";
-            break;
-        case 2:              
-        	res = "Martes";
-            break;
-        case 3:             
-        	res = "Miercoles";
-            break;
-        case 4:             
-        	res = "Jueves";
-            break;
-        case 5:             
-        	res = "Viernes";
-            break;           
-        case 6: 
-        	res = "Sabado";
-            break;
-        case 7: 
-        	res = "Domingo";
-            break;
-                  
-      }
-       return res;
-       
-	}
+
 
 }

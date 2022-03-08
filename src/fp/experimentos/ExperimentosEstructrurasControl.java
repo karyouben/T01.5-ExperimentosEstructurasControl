@@ -17,8 +17,8 @@ public class ExperimentosEstructrurasControl {
 	 * Muestra por consola un mensaje que indica si n es par.
 	 */
 	public static void mensajePar (Integer n) {
-		String s = String.format("El numero %d es: ", n);
-		System.out.println(s);
+		String s = String.format("El numero %d es ", n);
+		System.out.print(s);
 		//System.out.println("El número es " + n + " es ");
 		if (n % 2 == 0) {
 			System.out.println("par");
@@ -40,6 +40,35 @@ public class ExperimentosEstructrurasControl {
 	  }
 		return impuesto;
 	
+	}
+	public static String obtenNombreDia(Integer n1) {
+		String res = "" ;
+        switch (n1){
+        case 1:              
+            res = "Lunes";
+            break;
+        case 2:              
+        	res = "Martes";
+            break;
+        case 3:             
+        	res = "Miercoles";
+            break;
+        case 4:             
+        	res = "Jueves";
+            break;
+        case 5:             
+        	res = "Viernes";
+            break;           
+        case 6: 
+        	res = "Sabado";
+            break;
+        case 7: 
+        	res = "Domingo";
+            break;
+                  
+      }
+       return res;
+       
 	}
 }		
    
