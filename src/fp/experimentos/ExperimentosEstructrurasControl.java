@@ -1,6 +1,5 @@
 package fp.experimentos;
 
-import java.util.Scanner;
 
 
 
