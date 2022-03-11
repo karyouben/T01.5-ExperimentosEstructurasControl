@@ -60,11 +60,11 @@ public class ExperimentosEstructrurasControl {
             break;           
         case 6: 
         	res = "Sabado";
-            break;
+        	break;
+            
         case 7: 
         	res = "Domingo";
-            break;
-                  
+        	break;             
       }
        return res;    
 	}
